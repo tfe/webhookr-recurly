@@ -12,8 +12,6 @@ group :development, :test do
   gem "guard-markdown"
   gem "guard-livereload"
   gem "simplecov", :require => false
-
-  gem "byebug"
 end
 
 if File.exists?('Gemfile.local')

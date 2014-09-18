@@ -3,8 +3,6 @@ require "webhookr-recurly/version"
 require "active_support/core_ext/module/attribute_accessors"
 require "webhookr/ostruct_utils"
 
-require 'byebug'
-
 module Webhookr
   module Recurly
     class Adapter

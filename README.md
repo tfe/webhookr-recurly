@@ -19,7 +19,19 @@ Or install it yourself:
 
 ## Usage
 
-Once you have the gem installed run the generator to add the code to your initializer.
+Once you have the gem installed, run the generator to add the engine route to your config/routes.rb:
+
+```console
+rails g webhookr:add_route
+```
+
+or, add the routing information manually to config/routes.rb
+
+```ruby
+mount Webhookr::Engine => "/webhookr", :as => "webhookr"
+```
+
+Then run the generator to add the code to your initializer.
 An initializer will be created if you do not have one.
 
 ```console
